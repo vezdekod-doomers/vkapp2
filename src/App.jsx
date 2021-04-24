@@ -33,10 +33,35 @@ function App() {
         <Div className={styles.logocont}>
         </Div>
         <Div className={styles.members + ' ' + (isMobile ? styles.mobile : '')}>
-            <UserCard avatar={A} name={'Евсеев Роман'} role={'Геймдизайнер'} link={'https://vk.com/iacubovich'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'} />
-            <UserCard avatar={Me} name={'Алексей Арсеньев'} role={'FullStack разработчик'} link={'https://vk.com/id165148720'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'} />
-            <UserCard avatar={B} name={'Глеб Фомин'} role={'Робототехник'} link={'https://vk.com/gfomin2017'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'} />
-            <UserCard avatar={C} name={'Мария Жук'} role={'Дизайнер'} link={'https://vk.com/ukushu_tebya_za_zub'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'} />
+            <UserCard
+                avatar={A}
+                name={'Евсеев Роман'}
+                role={'Геймдизайнер'}
+                link={'https://vk.com/iacubovich'}
+                description={'Геймдизайнер, может сразу найти решение задачи и объяснить его всем членам команды. Легко находит общий язык её членами. Готов помочь и выручить в любой ситуации, сделает все во благо команды.'}
+            />
+            <UserCard
+                avatar={Me}
+                name={'Алексей Арсеньев'}
+                role={'FullStack разработчик'}
+                link={'https://vk.com/id165148720'}
+                description={'Является нашим главным мозгом, может с лёгкостью найти ошибку в коде и исправить её. Также Алексей всегда готов прийти, на помощь даже если это будет ему во вред. Человек трудолюбивый, целеустремлённый и решительный.'}
+            />
+            <UserCard
+                avatar={B}
+                name={'Глеб Фомин'}
+                role={'Робототехник'}
+                link={'https://vk.com/gfomin2017'}
+                description={'Робототехник, из чего угодно сможет собрать робота, который будет отлично функционировать. Всегда готов взять на себя дополнительный задания и сделать их качественно. Человек слова и хорошей работы.'}
+            />
+            <UserCard
+                avatar={C}
+                name={'Мария Жук'}
+                role={'Дизайнер'}
+                link={'https://vk.com/ukushu_tebya_za_zub'}
+                description={'Наш дизайнер; способна концентрироваться не только на внешней, но и на душевной стороне работы. Является душой нашего коллектива, всегда готова подбодрить в трудную минуту; поможет сделать красивый дизайн для любой сферы деятельности.'}
+
+            />
         </Div>
     </Div>
 }
