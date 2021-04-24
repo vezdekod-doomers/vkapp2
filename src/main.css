@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Calibri';
+    src: url("./assets/8277.ttf") format('truetype');
+}
+
+.vkapp2-root {
+    --border-color: #1E1231;
+    font-family: Calibri;
+    position: relative;
+    min-height: 100vh;
+    padding: 0 16px;
+}

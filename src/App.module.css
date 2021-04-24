@@ -1,0 +1,117 @@
+.members {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    row-gap: 16px;
+    column-gap: 16px;
+    margin-top: 20rem;
+}
+
+.members.mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    width: 6rem;
+    font-size: 64px;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.suncontainer {
+    position: relative;
+    top: 19.5vh;
+    left: -10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    position: absolute;
+    z-index: -2;
+    width: 70vw;
+}
+
+.mountains {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: -1;
+    max-height: 60vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: -3;
+    height: 100%;
+    width: 100vw;
+}
+
+.logocont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.line {
+    width: 40vw;
+    border: 1px solid var(--border-color);
+    height: 0;
+    padding: 0;
+    margin: 16px auto 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .suncontainer {
+        top: 8vh;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .members {
+        margin-top: 12vh;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .suncontainer {
+        top: 5vh;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .members {
+        margin-top: 6vh;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-top: 0.5rem;
+        margin-left: 3rem;
+    }
+}
