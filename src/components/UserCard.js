@@ -10,13 +10,13 @@ function UserCard(props) {
         <Div className={styles.header}>
             <Avatar src={props.avatar} className={styles.avatar} size={48} shadow={false} />
             <Div className={styles.headermain}>
-                <Text weight={'medium'}>{props.name}</Text>
-                <Caption weight={'regular'} level={"2"}>{props.role}</Caption>
+                <Text weight={'medium'} className={styles.name}>{props.name}</Text>
+                <Caption weight={'regular'} level={"2"} className={styles.role}>{props.role}</Caption>
             </Div>
             <Icon24Linked onClick={() => window.open(props.link)} />
         </Div>
         <Div>
-            <Text weight={'regular'}>{props.description}</Text>
+            <Text weight={'regular'} className={styles.desc}>{props.description}</Text>
         </Div>
     </Div>
 }

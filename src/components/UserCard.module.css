@@ -30,6 +30,16 @@
     flex: 1;
 }
 
+.name {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.role {
+    font-size: 16px;
+    line-height: 18px;
+}
+
 .avatar {
     /*border: 0.5px solid var(--border-color);*/
     border-radius: 50%;
@@ -37,4 +47,8 @@
 
 .link {
     padding: 0 0 8px;
+}
+
+.desc {
+    color: white;
 }
