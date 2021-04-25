@@ -1,0 +1,61 @@
+.container {
+    border-radius: 4px;
+    /*border: 1px solid var(--border-color);*/
+    background-color: #e2c4dc70;
+    color: white;
+    --text_secondary: white;
+    --field_background: #5A3B5B;
+    padding: 16px 16px 44px;
+}
+
+.container:not(.mobile) {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.container input {
+    --text_primary: white;
+}
+
+.container input::placeholder {
+    color: #aaaaaa;
+}
+
+.container .form {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.button {
+    float: right;
+    height: 24px;
+}
+
+.status {
+    --text_primary: white;
+    --text_subhead: white;
+    animation: fadeIn .25s ease-in;
+}
+
+.status.fadeout {
+    animation: fadeOut .25s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

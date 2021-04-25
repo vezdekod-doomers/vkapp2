@@ -10,6 +10,7 @@ import Background from './assets/background.svg';
 import styles from './App.module.css';
 import {useEffect, useState} from "react";
 import bridge from "@vkontakte/vk-bridge";
+import FeedbackCard from "./components/FeedbackCard";
 
 function App() {
     const adaptive = useAdaptivity();
@@ -60,8 +61,10 @@ function App() {
                 role={'Дизайнер'}
                 link={'https://vk.com/ukushu_tebya_za_zub'}
                 description={'Наш дизайнер; способна концентрироваться не только на внешней, но и на душевной стороне работы. Является душой нашего коллектива, всегда готова подбодрить в трудную минуту; поможет сделать красивый дизайн для любой сферы деятельности.'}
-
             />
+        </Div>
+        <Div className={styles.feedback}>
+            <FeedbackCard />
         </Div>
     </Div>
 }
